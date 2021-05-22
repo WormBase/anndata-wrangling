@@ -1,4 +1,4 @@
-# WormBase anndata wrangling conventions
+# WormBase anndata standard wrangling conventions
 
 This document describes how WormBase should wrangle single cell RNA seq data into the [anndata](https://anndata.readthedocs.io/en/stable/) format in `.h5ad` files with standard fields, plus any number of optional fields that vary depending on the metadata the authors provide. 
 
