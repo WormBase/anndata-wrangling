@@ -27,6 +27,6 @@ Below we provide a standard description of the mandatory fields we use in all da
 | `adata.obs.sample` | The name of the biological sample that is in this batch | categorical string | `L2 larvae fourth repeat`|Required|
 | `adata.obs.sample_description` | Description of the sample. This is mandatory because otherwise it will be very easy to confuse two samples from their name without carefully reading the paper or contacting authors | categorical string | `F4_1`|Required|
 | `adata.obs.barcode` | The cell barcode | string | `AAACCCAAGATCGCTT-1`|Required|
-| `adata.obs.cell_type` | The cell type annotation provided by the authors. Should be `not provided` if not available | categorical | `ASJ`|Required|
-| `adata.obs.cell_subtype` | The cell subtype annotation if provided by the authors | categorical | `BWM_head_row_1`|Optional|
+| `adata.obs.cell_type` | The cell type annotation provided by the authors. Should be `not provided` if not available | categorical | `Neuronal`|Required|
+| `adata.obs.cell_subtype` | The cell subtype annotation if provided by the authors. If the annotation contains individual neuron types, these should be cell subtypes. If only a cell type label was provided, it can be repeated in both `cell_type` and `cell_subtype`| categorical | `ASJ`|Optional|
 | `adata.obs.tissue` | The tissue annotation if provided by the authors | categorical | `Intestine`|Optional|
